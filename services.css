@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: calibri;
+
+}
+
+
+header {
+    padding: 25px 25px 0px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    color: #39a7ff;
+    column-gap: 50px;
+    row-gap: 5px;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 35px;
+    font-family: 'Roboto Mono', monospace;    
+}
+header nav ul {
+    display: flex;
+    gap: 15px;
+}
+
+header li {
+    display: inline;
+}
+
+header li a {
+    color: #adb3b1;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+header li a:hover {
+    color: deepskyblue;
+    font-weight: bold;
+    padding: 3px 3px 3px 3px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+header li a:active {
+    color: red;
+}
+
+
+
+/* main */
+main{
+    color: deepskyblue;
+    background-color: white;
+    margin-top: 40px;
+
+}
+
+
+/* main .judulwebsite */
+main .judulwebsite{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* main .service-box */
+main .service-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding:40px 0;
+}
+
+main .service-box li {
+    display: inline-block;
+    width: 300px;
+    height: 460px;
+    border: 2px solid deepskyblue;
+    border-radius: 20px;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+main .service-box .satu,
+main .service-box .tiga {
+    animation: slideup 1s forwards;
+}
+
+main .service-box .dua {
+    animation: slidedown 1s forwards;
+}
+
+.service-box  li img,
+.service-box h2,
+.service-box p {
+    margin-bottom: 10px;
+}
+
+.service-box  li img {
+    width: 250px;
+    height: 140px;
+    border-radius: 10px;
+}
+.service-box h2 {
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    font-variant: small-caps;
+    text-align: center;
+    color: #39a7ff;
+}
+
+.service-box p {
+    font-size: 20px;
+    color: #111;
+    text-align: center;
+}
+
+.service-box button {
+    width: 120px;
+    height: 40px;
+    position: relative;
+    left: 70px;
+    bottom: -10px;
+    background-color: #39a7ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.service-box button:hover {
+    background-color: #2d82c8;
+    cursor:pointer;
+}
+
+
+/* footer */
+footer {
+    position: relative;
+    bottom: -74px;
+    font-size: 15px;
+    background-color: #24305e;
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+}
+
+
+@media screen and (max-width: 768px)
+{
+    /* header */
+    header {
+        padding: 25px 25px 0px 25px;
+        display: flex;
+        flex-wrap: wrap;
+        color: #39a7ff;
+        column-gap: 50px;
+        row-gap: 5px;
+        align-items: center;
+    }
+    
+    header h1 {
+        font-size: 30px;
+    }
+    
+    header nav ul {
+        display: flex;
+        gap: 15px;
+    }
+    
+    header li {
+        display: inline;
+    }
+    
+    header li a {
+        color: #adb3b1;
+        font-size: 18px;
+    }
+    
+
+    /* main */
+    .main {
+        padding: 20px 0;
+        width: 100%;
+        padding-top: 0 ;        
+    }
+
+    main .judulwebsite {
+        line-height: 1;
+        left: 28vw;
+        font-size: 32px;
+    }
+
+
+}
+
+
+@keyframes slidedown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+@keyframes slideup {
+    from {
+        transform: translatey(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translatey(0);
+        opacity: 1;
+    }
+}
